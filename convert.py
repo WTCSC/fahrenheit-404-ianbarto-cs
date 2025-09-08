@@ -1,6 +1,7 @@
 starting_temp = input("What temperature are you starting with: Kelvin(K) Fahrenheit(F) Celsius(C)")
-starting_value = float(input("What is the value of your current temperature?"))
 converting_temp = input("What are you converting your temperature to: Kelvin(K) Fahrenheit(F) Celsius(C)")
+starting_value = float(input("What is the value of your current temperature?"))
+
 
 if starting_temp.lower() == ("f"):
     if converting_temp.lower() == ("k"):
@@ -23,6 +24,8 @@ elif starting_temp.lower() == ("c"):
     elif converting_temp.lower() == ("k"):
         Answer = (starting_value + 273.15)
         print (f" {starting_value}°C is {Answer}°K")
+else:
+    print("Something was not inputted right, please try again...")
 
         
 
